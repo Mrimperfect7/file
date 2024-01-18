@@ -6,16 +6,27 @@
     <title>AKFX10</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+            overflow: hidden;
+            animation: gradientAnimation 10s infinite linear;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         header {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background: linear-gradient(45deg, #2193b0, #6dd5ed, #2193b0, #6dd5ed);
             color: white;
         }
 
