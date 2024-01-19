@@ -9,9 +9,11 @@
   background-color: #333;
   padding: 15px;
   position: fixed;
-  top: 60px;
-  left: 0;
-  width: 200px;
+  top: 0;
+  left: -250px; /* Set initial position off-screen */
+  width: 250px;
+  height: 100%;
+  transition: 0.5s; /* Add animation transition */
 }
 
 .drawer ul {
@@ -28,4 +30,9 @@
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+}
+
+/* Animation for opening and closing the drawer */
+.drawer-open {
+  left: 0;
 }
