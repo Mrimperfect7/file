@@ -68,6 +68,25 @@
     opacity: 1;
   }
 }
+      .animated-rgb-text {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff); /* Gradient for RGB effect */
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animateRGB 5s linear infinite;
+}
+
+@keyframes animateRGB {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
       
     </style>
 </head>
@@ -86,7 +105,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <h2>AKFX-ABOUT</h2>
+    <h2 class="animated-rgb-text">AKFX-ABOUT</h2>
   </header>
 
   <section class="content">
