@@ -26,6 +26,40 @@
             padding: 100px 20px;
             color: white;
     }
+          .entering-text {
+  font-size: 2em;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  animation: enterText 2s ease-in-out; /* Text entering animation */
+}
+
+@keyframes enterText {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+      .animated-rgb-text {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff); /* Gradient for RGB effect */
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animateRGB 5s linear infinite;
+}
+
+@keyframes animateRGB {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
     </style>
 </head>
 <body>
@@ -47,13 +81,13 @@
 
   <section class="content">
     <div class="entering-text">
-      <h1>Contact Me</h1>
-      <p>Feel free to reach out to me using the following contact information:</p>
+      <h1 class="animated-rgb-text">Contact Me</h1>
+      <p class="entering-text"><b>Feel free to reach out to me using the following contact information:</b></p>
 
       <ul>
-        <li>Email: akfx10@gmail.com</li>
-        <li>Phone: +918848377746</li>
-        <li>INSTAGRAM: instagram.com/athul.krishna10</li>
+        <li><b>Email: akfx10@gmail.com</b></li>
+        <li><b>Phone: +918848377746</b></li>
+        <li><b>INSTAGRAM: instagram.com/athul.krishna10</b></li>
       </ul>
     </div>
   </section>
