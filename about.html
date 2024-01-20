@@ -53,17 +53,19 @@
       ul{
         color:white;
       }
-      .text-fade-in {
-  opacity: 0;
-  animation: fadeInAndStay 60.5s ease;
+      .entering-text {
+  font-size: 2em;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  animation: enterText 2s ease-in-out; /* Text entering animation */
 }
 
-@keyframes fadeInAndStay {
-  from {
-    opacity: 0; 
+@keyframes enterText {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    opacity: 1;
+  100% {
+    transform: translateX(0);
   }
 }
       .animated-rgb-text {
@@ -108,11 +110,11 @@
 
   <section class="content">
     <div class="about-me">
-      <h1 class="text-fade-in animated-rgb-text">About Me</h1>
-      <p class="text-fade-in">Welcome to my portfolio! I am [ATHUL KRISHNA],With a keen interest in [FOOTBALL,VIDEO EDITING,WEB DEVELOPMENT,ETC], I strive to [PROFESSIONAL WEB DEVELOPER].</p>
+      <h1 class="entering-text  animated-rgb-text">About Me</h1>
+      <p class="entering-text">Welcome to my portfolio! I am [ATHUL KRISHNA],With a keen interest in [FOOTBALL,VIDEO EDITING,WEB DEVELOPMENT,ETC], I strive to [PROFESSIONAL WEB DEVELOPER].</p>
 
-      <h2 class="text-fade-in animated-rgb-text">Skills</h2>
-      <ul class="text-fade-in">
+      <h2 class="entering-text  animated-rgb-text">Skills</h2>
+      <ul class="entering-text">
         <li>Web Development</li>
         <li>Graphic Design</li>
         <li>Project Management</li>
@@ -120,8 +122,8 @@
         <!-- Add more skills as needed -->
       </ul>
 
-      <h2 class="text-fade-in animated-rgb-text">Education</h2>
-      <p class="text-fade-in">[CURRENTLY STUDING AT ], [CALICUT UNIVERSITY ], [2023]</p>
+      <h2 class="entering-text  animated-rgb-text">Education</h2>
+      <p class="entering-text">[CURRENTLY STUDING AT ], [CALICUT UNIVERSITY ], [2023]</p>
 
      
 
