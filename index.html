@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="styles3.css">
+    <link rel="stylesheet" href="styles3.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>AKFX10</title>
     <style>
         body {
@@ -48,6 +50,7 @@
             background-color: #333;
             color: white;
         }
+
         #video-background {
             position: fixed;
             top: 0;
@@ -61,45 +64,46 @@
         }
     </style>
 </head>
+
 <body>
-<video id="video-background" autoplay muted loop>
+    <video id="video-background" autoplay muted loop>
         <source src="https://i.imgur.com/uI5W16M.mp4" type="video/mp4">
         Your browser does not support the video tag.
-</video>
+    </video>
     <header>
         <div class="container">
-	<div class="phone">
-		<nav class="navigation">
-			<ul class="navigation__list">
-				
-				<li class="navigation__item">
-					<a class="navigation__link active" href="#home">
-						<i class="navigation__icon" data-feather="home"></i>
-						<span class="navigation__text">HOME</span>
-					</a>
-				</li>
-				<li class="navigation__item">
-					<a class="navigation__link" href="#about">
-						<i class="navigation__icon" data-feather="search"></i>
-						<span class="navigation__text">SEARCH</span>
-					</a>
-				</li>
-				<li class="navigation__item">
-					<a class="navigation__link" href="#categories">
-						<i class="navigation__icon" data-feather="layers"></i>
-						<span class="navigation__text">CATEGORIES</span>
-					</a>
-				</li>
-				<li class="navigation__item">
-					<a class="navigation__link" href="#likes">
-						<i class="navigation__icon" data-feather="heart"></i>
-						<span class="navigation__text">LIKES</span>
-					</a>
-				</li>
-				
-			</ul>
-		</nav>
-	</div>
+            <div class="phone">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+
+                        <li class="navigation__item">
+                            <a class="navigation__link active" href="#home">
+                                <i class="navigation__icon" data-feather="home"></i>
+                                <span class="navigation__text">HOME</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#about">
+                                <i class="navigation__icon" data-feather="search"></i>
+                                <span class="navigation__text">SEARCH</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#categories">
+                                <i class="navigation__icon" data-feather="layers"></i>
+                                <span class="navigation__text">CATEGORIES</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#likes">
+                                <i class="navigation__icon" data-feather="heart"></i>
+                                <span class="navigation__text">LIKES</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
         <h1>AKFX10 - Portfolio</h1>
         <p>Web Developer & Designer</p>
@@ -107,9 +111,7 @@
 
     <section>
         <div class="portfolio-item">
-            <a href="https://i.imgur.com/tSOspM4.jpeg.jpg"></a><br>
-            <a href="https://mrimperfect7.github.io/prpse"><img src="https://i.imgur.com/tSOspM4.jpeg"></a>
-            
+            <a href="https://mrimperfect7.github.io/prpse"><img src="https://i.imgur.com/tSOspM4.jpeg" alt="Project 1"></a><br>
             <h2>Project 1</h2>
             <p>HEHE.</p>
         </div>
@@ -125,7 +127,10 @@
     <footer>
         <p>Contact: akfx10@email.com | Follow me on <a href="https://instagram.com/athul.krishna10" target="_blank">INSTA</a></p>
     </footer>
-      <script src="scripts.js"></script>
-
+    <script src="scripts.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
+
 </html>
